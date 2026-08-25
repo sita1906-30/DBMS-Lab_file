@@ -1,0 +1,15 @@
+AIM: Design an ER diagram for an Indian e-commerce platform with entities Customer, Product, Order, OrderItem, Seller, Category, Payment, Delivery, Address. Specify primary keys, composite and multi-valued attributes, weak entities, specialization of Product, and participation constraints.
+
+Entities & Attributes:
+
+1. Customer: Customer_ID (Primary Key), Name, Email, Phone, RegisteredAt
+2. Product: Product_ID (Primary Key), ProductName, Stock, Price, Description
+3.Order: Order_ID (Primary Key), Status, Date, Total Amount
+4.OrderItem: Order_ID, Product_ID, Unit Price, Quantity, Tax Amount, Discount
+  **Composite Key → Order_ID & Product_ID**
+5.Seller: Seller_ID (Primary Key), PAN, GSTIN, Business Name, BankDetails
+6.Category:Category_ID (Primary Key), CategoryName, Description
+7.Payment:Payment_ID (Primary Key), Payment Method, Transaction ID, Amount, Payment Date, Payment Status
+8.Delivery: Delivery_ID (Primary Key), Estimated Delivery Date, Actual Delivery Date, Delivery Status, Courier Partner, Dispatch Date, Tracking No.
+9.Address:Address_ID (Primary Key), City, State, Street/House No., PIN Code, Address Details
+
